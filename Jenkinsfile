@@ -18,11 +18,11 @@ pipeline {
                 }
             }
         }
-    }
-    stage("Maven Build") {
-        steps {
-            script {
-                sh "mvn package -DskipTests=true"
+        stage("Maven Build") {
+            steps {
+                script {
+                    sh "mvn package -DskipTests=true"
+                }
             }
         }
     }
